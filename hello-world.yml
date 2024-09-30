@@ -2,7 +2,7 @@ resources:
 - name: repo
   type: git
   source:
-    uri: https://github.com/hugomatton/concourse.git
+    uri: https://github.com/hugomatton/concourse
 
 jobs:
 - name: hello-world-job
