@@ -3,11 +3,12 @@ resources:
   type: git
   source:
     uri: https://github.com/hugomatton/concourse.git
+
 jobs:
 - name: hello-world-job
   plan:
   - get: repo
-    trigger: true
+    trigger: true   # tell Concourse to trigger this job when new versions are emitted
   - task: hello-world-task
     config:
       platform: linux
